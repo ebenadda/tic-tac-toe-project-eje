@@ -14,16 +14,14 @@ public class PlayerOneGen {
 
     }
 
-    public boolean isPlayerFirst() {
-
+    public void isPlayerFirst() {
         if (Math.random() < 0.5) {
             computer = true;
-
+            player1 = false;
         } else {
+            computer = false;
             player1 = true;
         }
-        return false;
-    } //comment here to force another Git push
-
+    }
 }
 
