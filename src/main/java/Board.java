@@ -15,7 +15,8 @@ public class Board {
 
     //TODO move gameBoard cell positions to a new class or method
     public static void main(String[] args) {
-        char[][] gameBoard = {{' ', '|', ' ', '|', ' '},
+        char[][] gameBoard = {
+                {' ', '|', ' ', '|', ' '},
                 {'-', '+', '-', '+', '-'},
                 {' ', '|', ' ', '|', ' '},
                 {'-', '+', '-', '+', '-'},
