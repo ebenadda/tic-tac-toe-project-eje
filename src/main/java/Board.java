@@ -1,9 +1,21 @@
 import java.util.Scanner;
 
 public class Board {
+    /**
+     * @param args
+     */
+
+    //TODO Reoganize so that methods are more cohesive and coupling is reduced as much as possible
+
+    /**
+     * This method prints out the gameboard
+     * It also contains positions for the cells in the game board.
+     * @param args
+     */
+
+    //TODO move gameBoard cell positions to a new class or method
     public static void main(String[] args) {
-        char[][] gameBoard = {
-                {' ', '|', ' ', '|', ' '},
+        char[][] gameBoard = {{' ', '|', ' ', '|', ' '},
                 {'-', '+', '-', '+', '-'},
                 {' ', '|', ' ', '|', ' '},
                 {'-', '+', '-', '+', '-'},
@@ -17,6 +29,10 @@ public class Board {
         int position = scanner.nextInt();
 
         System.out.println(position);
+
+        //TODO Move this out of the main method into the Board class
+        // TODO determine when computer can play
+        // TODO determine when human can play
 
         switch (position) {
             case 1:
@@ -49,6 +65,10 @@ public class Board {
         }
     }
 
+    /**
+     * THis method prints out the gameBoard.
+     * @param gameBoard
+     */
     private static void printGameBoard(char[][] gameBoard) {
         for (char[] row : gameBoard) {
             for (char g : row) {
@@ -57,6 +77,12 @@ public class Board {
             System.out.println();
         }
     }
+
+    public static void putGamePiece(char[][] gameBoard, int postion, String player) {
+
+
+    }
+
 }
 
 
