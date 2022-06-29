@@ -39,9 +39,19 @@ public class Board {
 
         };
         printGameBoard(gameBoard);
-
-
-
+        while (true) {
+            playerMove(gameBoard);
+            printGameBoard(gameBoard);
+            if (WinConditions.isGameOver(gameBoard)) {
+                break;
+            }
+            cpuMove(gameBoard);
+            printGameBoard(gameBoard);
+            if (WinConditions.isGameOver(gameBoard)) {
+                break;
+            }
+        }
+    }
 
     private static void playerOne(char[][] gameBoard) {
          Scanner scan = new Scanner(System.in);
