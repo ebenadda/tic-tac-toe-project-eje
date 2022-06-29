@@ -1,3 +1,4 @@
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,6 +12,23 @@ public class Board {
 //    int cpuMoveColumn;
 
 
+
+import java.util.Scanner;
+
+public class Board {
+    /**
+     * @param args
+     */
+
+    //TODO Reoganize so that methods are more cohesive and coupling is reduced as much as possible
+
+    /**
+     * This method prints out the gameboard
+     * It also contains positions for the cells in the game board.
+     * @param args
+     */
+
+
     public static void main(String[] args) {
         char[][] gameBoard = {
                 {' ', '|', ' ', '|', ' '},
@@ -21,7 +39,9 @@ public class Board {
 
         };
         printGameBoard(gameBoard);
-    }
+
+
+
 
     private static void playerOne(char[][] gameBoard) {
          Scanner scan = new Scanner(System.in);
@@ -81,6 +101,13 @@ public class Board {
 
 
     static void printGameBoard(char[][] gameBoard) {
+
+    /**
+     * THis method prints out the gameBoard.
+     * @param gameBoard
+     */
+    private static void printGameBoard(char[][] gameBoard) {
+
         for (char[] row : gameBoard) {
             for (char g : row) {
                 System.out.print(g);
@@ -105,6 +132,7 @@ public class Board {
 //    public void setCpuMoveColumn(int cpuMoveColumn) {
 //        this.cpuMoveColumn = cpuMoveColumn;
 //    }
+
 }
 
 
