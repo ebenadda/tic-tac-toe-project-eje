@@ -50,7 +50,7 @@ public class Board {
             int j = (playerInputColumn * 2);
             // within range check
             if (playerInputRow < 0 || playerInputRow > 4 || playerInputColumn < 0 || playerInputColumn > 4) {
-                System.out.println("Sorry! Please input 0-2");
+                System.out.println("Sorry! Please choose between 0-2");
             } else if (gameBoard[i][j] != ' ') {
                 System.out.println("zone is not free!");
             } else {
