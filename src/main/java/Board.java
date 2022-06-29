@@ -8,25 +8,9 @@ public class Board {
 
     int i;
     int j;
+
 //    int cpuMoveRow;
 //    int cpuMoveColumn;
-
-
-
-import java.util.Scanner;
-
-public class Board {
-    /**
-     * @param args
-     */
-
-    //TODO Reoganize so that methods are more cohesive and coupling is reduced as much as possible
-
-    /**
-     * This method prints out the gameboard
-     * It also contains positions for the cells in the game board.
-     * @param args
-     */
 
 
     public static void main(String[] args) {
@@ -53,8 +37,8 @@ public class Board {
         }
     }
 
-    private static void playerOne(char[][] gameBoard) {
-         Scanner scan = new Scanner(System.in);
+    private static void playerMove(char[][] gameBoard) {
+        Scanner scan = new Scanner(System.in);
         while (true) {
             //ask the player for row and column inputs. Then the inputs will place an x on player directed location
             System.out.println("Enter a row number 0-2.");
@@ -80,14 +64,13 @@ public class Board {
         Random cpuRand = new Random();
         int cpuMoveRow;
         int cpuMoveColumn;
-        while (true) {
-            cpuMoveRow = (cpuRand.nextInt(3) + 1) * 2;
-            cpuMoveColumn = (cpuRand.nextInt(3) + 1) * 2;
+        boolean cpuTurn = true;
+        while (cpuTurn) {
+            cpuMoveRow = (cpuRand.nextInt(3) * 2);
+            cpuMoveColumn = (cpuRand.nextInt(3) * 2);
             if (gameBoard[cpuMoveRow][cpuMoveColumn] == ' ') {
                 gameBoard[cpuMoveRow][cpuMoveColumn] = 'O';
-            }else{
-                //need repeater
-                break;
+                cpuTurn = false;
             }
         }
     }
@@ -98,10 +81,10 @@ public class Board {
         return gameBoard[i][j] == ' ';
     }
 
-    public static boolean filledBoard(char[][] gameBoard){
-        for(int i = 0; i < gameBoard.length; i++){
-            for(int j = 0; j < gameBoard[i].length; j++){
-                if(gameBoard[i][j] == ' '){
+    public static boolean filledBoard(char[][] gameBoard) {
+        for (int i = 0; i < gameBoard.length; i++) {
+            for (int j = 0; j < gameBoard[i].length; j++) {
+                if (gameBoard[i][j] == ' ') {
                     return false;
                 }
             }
@@ -111,13 +94,6 @@ public class Board {
 
 
     static void printGameBoard(char[][] gameBoard) {
-
-    /**
-     * THis method prints out the gameBoard.
-     * @param gameBoard
-     */
-    private static void printGameBoard(char[][] gameBoard) {
-
         for (char[] row : gameBoard) {
             for (char g : row) {
                 System.out.print(g);
@@ -142,6 +118,7 @@ public class Board {
 //    public void setCpuMoveColumn(int cpuMoveColumn) {
 //        this.cpuMoveColumn = cpuMoveColumn;
 //    }
+
 
 }
 
