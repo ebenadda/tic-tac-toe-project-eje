@@ -19,7 +19,6 @@ public class PlayerOneGen {
             computer = true;
             player1 = false;
         } else {
-            // This is redundant but it helps me keep it straight in my head!
             computer = false;
             player1 = true;
         }
