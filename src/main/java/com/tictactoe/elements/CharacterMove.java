@@ -1,11 +1,13 @@
 package com.tictactoe.elements;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.security.KeyStore;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Manages moves of the gamers (cpu and player) form start of game to the finish.
+ * Uses an instance of {@link Random} to generate cpu moves.Also uses an instance of
+ * {@link Scanner} to help player input row and column numbers to select a cell.
+ */
 public class CharacterMove {
     public static void playerMove(char[][] gameBoard) {
         Scanner scan = new Scanner(System.in);

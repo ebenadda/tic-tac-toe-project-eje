@@ -2,7 +2,9 @@ package com.tictactoe.client;
 
 import com.tictactoe.elements.Board;
 
-
+/**
+ * This is the entry point for the <Strong>"TicTacToe"</Strong> game.
+ */
 public class TicTacToeClient {
     public static void main(String[] args) {
         System.out.println("\nTIC-TAC-TOE");
