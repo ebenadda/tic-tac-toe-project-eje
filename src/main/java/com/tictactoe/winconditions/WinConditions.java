@@ -2,6 +2,8 @@
  * checks all possible winning combinations
  * Determines if winning move has been made and displays corresponding message to the players.
  */
+package com.tictactoe.winconditions;
+
 public class WinConditions {
 
     public static boolean isGameOver(char[][] gameBoard) {
