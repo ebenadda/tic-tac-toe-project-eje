@@ -2,6 +2,8 @@ package com.tictactoe.elements;
 
 import com.tictactoe.winconditions.WinConditions;
 
+import java.io.IOException;
+
 import static com.tictactoe.elements.CharacterMove.cpuMove;
 import static com.tictactoe.elements.CharacterMove.playerMove;
 
@@ -18,9 +20,7 @@ public class Board {
     };
 
 
-
-
-    public static void gameStart() {
+    public static void gameStart() throws IOException {
         while (true) {
             playerMove(gameBoard);
             printGameBoard(gameBoard);
@@ -34,7 +34,6 @@ public class Board {
             }
         }
     }
-
 
     public static void printGameBoard(char[][] gameBoard) {
         for (char[] row : gameBoard) {
