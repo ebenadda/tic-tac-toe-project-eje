@@ -1,4 +1,7 @@
-
+/**
+ * checks all possible winning combinations
+ * Determines if winning move has been made and displays corresponding message to the players.
+ */
 public class WinConditions {
 
     public static boolean isGameOver(char[][] gameBoard) {
@@ -138,7 +141,7 @@ public class WinConditions {
                 && gameBoard[4][0] != ' '
                 && gameBoard[4][2] != ' '
                 && gameBoard[4][4] != ' ') {
-            System.out.println("CAT'S GAME!!");
+            System.out.println("CAT'S GAME!! TRY AGAIN, YOU COULD WIN THIS TIME! :)");
         }
         return false;
     }
