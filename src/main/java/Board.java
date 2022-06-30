@@ -25,7 +25,6 @@ public class Board {
         printGameBoard(gameBoard);
         while (true) {
             playerMove(gameBoard);
-            //printGameBoard(gameBoard);
             if (WinConditions.isGameOver(gameBoard)) {
                 break;
             }
