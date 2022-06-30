@@ -1,4 +1,4 @@
-
+package com.tictactoe.winconditions;
 
 public class WinConditions {
 
