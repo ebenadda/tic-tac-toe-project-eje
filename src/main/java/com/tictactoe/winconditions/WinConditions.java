@@ -4,6 +4,8 @@
  */
 package com.tictactoe.winconditions;
 
+import com.tictactoe.elements.Board;
+
 public class WinConditions {
 
     public static boolean isGameOver(char[][] gameBoard) {
