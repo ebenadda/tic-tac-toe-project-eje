@@ -1,5 +1,7 @@
+package com.tictactoe.winconditions;
 
 public class WinConditions {
+
 
     public static boolean isGameOver(char[][] gameBoard) {
 
@@ -44,7 +46,7 @@ public class WinConditions {
             return true;
         }
 
-        //LEFT COLUMN DOWN
+        //FIRST COLUMN DOWN
         if (gameBoard[0][0] == 'X'
                 && gameBoard[2][0] == 'X'
                 && gameBoard[4][0] == 'X') {
@@ -62,13 +64,13 @@ public class WinConditions {
         if (gameBoard[0][2] == 'X'
                 && gameBoard[2][2] == 'X'
                 && gameBoard[4][2] == 'X') {
-            System.out.println("Player 1 WINS!");
+            System.out.println("Player1 WINS");
             return true;
         }
         if (gameBoard[0][2] == 'O'
                 && gameBoard[2][2] == 'O'
                 && gameBoard[4][2] == 'O') {
-            System.out.println("Computer WINS!");
+            System.out.println("Computer WINS");
             return true;
         }
 
@@ -76,21 +78,21 @@ public class WinConditions {
         if (gameBoard[0][4] == 'X'
                 && gameBoard[2][4] == 'X'
                 && gameBoard[4][4] == 'X') {
-            System.out.println("Player 1 WINS!");
+            System.out.println("Player1 WINS");
             return true;
         }
         if (gameBoard[0][4] == 'O'
                 && gameBoard[2][4] == 'O'
                 && gameBoard[4][4] == 'O') {
-            System.out.println("Computer WINS!");
+            System.out.println("Computer WINS");
             return true;
         }
 
-        // DIAGONAL LEFT TO RIGHT
+        // DIAG LEFT TO RIGHT
         if (gameBoard[0][0] == 'X'
                 && gameBoard[2][2] == 'X'
                 && gameBoard[4][4] == 'X') {
-            System.out.println("Player 1 WINS!");
+            System.out.println("Player1 WINS");
             return true;
         }
         if (gameBoard[0][0] == 'O'
@@ -99,11 +101,11 @@ public class WinConditions {
             System.out.println("Computer WINS");
             return true;
         }
-        // DIAGONAL RIGHT TO LEFT
+        // DIAG RIGHT TO LEFT
         if (gameBoard[0][4] == 'X'
                 && gameBoard[2][2] == 'X'
                 && gameBoard[4][0] == 'X') {
-            System.out.println("Player 1 WINS!");
+            System.out.println("Player1 WINS!");
             return true;
         }
         if (gameBoard[0][4] == 'O'
