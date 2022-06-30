@@ -9,6 +9,11 @@ import java.security.KeyStore;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Manages moves of the gamers (cpu and player) form start of game to the finish.
+ * Uses an instance of {@link Random} to generate cpu moves.Also uses an instance of
+ * {@link java.io.BufferedReader} to help player input row and column numbers to select a cell.
+ */
 public class CharacterMove {
 
     public static void playerMove(char[][] gameBoard) throws IOException {
@@ -24,6 +29,7 @@ public class CharacterMove {
             //Multiply by 2 so that the rows and columns aren't on board intersections
             int i = (playerInputRow * 2);
             int j = (playerInputColumn * 2);
+
             gameBoard[i][j] = 'X';
             playerTurn = false;
         }

@@ -4,6 +4,9 @@ import com.tictactoe.elements.Board;
 
 import java.io.IOException;
 
+/**
+ * This is the entry point for the <Strong>"TicTacToe"</Strong> game.
+ */
 
 public class TicTacToeClient {
     public static void main(String[] args) throws IOException {

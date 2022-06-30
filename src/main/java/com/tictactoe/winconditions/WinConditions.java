@@ -1,10 +1,14 @@
-/**
- * checks all possible winning combinations
- * Determines if winning move has been made and displays corresponding message to the players.
- */
+
 package com.tictactoe.winconditions;
 
 import com.tictactoe.elements.Board;
+
+/**
+ * Checks all possible winning combinations.
+ * Contains codes for {@link #isGameOver(char[][])} that determines if winning
+ * move has been made by either player or cpu. It displays corresponding message
+ * to the players depending on who wins.
+ */
 
 public class WinConditions {
 
