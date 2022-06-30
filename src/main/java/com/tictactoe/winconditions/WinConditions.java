@@ -1,5 +1,6 @@
 
 package com.tictactoe.winconditions;
+
 import com.tictactoe.elements.Board;
 
 /**

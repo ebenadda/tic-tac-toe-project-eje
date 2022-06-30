@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Manages moves of the gamers (cpu and player) form start of game to the finish.
  * Uses an instance of {@link Random} to generate cpu moves.Also uses an instance of
- * {@link Scanner} to help player input row and column numbers to select a cell.
+ * {@link java.io.BufferedReader} to help player input row and column numbers to select a cell.
  */
 public class CharacterMove {
     public static void playerMove(char[][] gameBoard) {
@@ -28,7 +28,7 @@ public class CharacterMove {
                 System.out.println("zone is not free!");
             } else {
                 gameBoard[i][j] = 'X';
-                playerTurn=false;
+                playerTurn = false;
             }
         }
     }

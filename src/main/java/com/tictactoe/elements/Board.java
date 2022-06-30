@@ -1,6 +1,7 @@
 package com.tictactoe.elements;
 
 import com.tictactoe.winconditions.WinConditions;
+
 import static com.tictactoe.elements.CharacterMove.cpuMove;
 import static com.tictactoe.elements.CharacterMove.playerMove;
 
@@ -24,8 +25,6 @@ public class Board {
             {' ', '|', ' ', '|', ' '},
 
     };
-
-
 
 
     public static void gameStart() {
