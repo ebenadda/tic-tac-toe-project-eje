@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.tictactoe.elements","l":"Board"},{"p":"com.tictactoe.elements","l":"CharacterMove"},{"p":"com.tictactoe.client","l":"TicTacToeClient"},{"p":"com.tictactoe.winconditions","l":"WinConditions"}]
